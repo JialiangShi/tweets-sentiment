@@ -60,7 +60,7 @@ When it comes to web server, we couldn't simply run it locally and expect a mira
 
 Creating a server that has all the appropriate software can be tricky so I have recorded a sequence that works for me.
 
-The first thing is to launch a server with different software than the simple  Amazon linux we have been using in class. We need one that has, for example, `numpy` and friends so let's use an *image* (snapshot of a disk with a bunch of stuff installed) that already has machine learning software installed: Use "*Ubuntu Server 16.04 LTS (HVM), SSD Volume Type*":
+The first thing is to launch a server with different software than the simple Amazon linux. We need one that has, for example, `numpy` and friends so let's use an *image* (snapshot of a disk with a bunch of stuff installed) that already has machine learning software installed: Use "*Ubuntu Server 16.04 LTS (HVM), SSD Volume Type*":
 
 Create a `t2.medium` size computer (in Oregon; it's cheaper)!
 
@@ -75,7 +75,6 @@ Then install software we need:
 ```bash
 sudo apt update
 sudo apt install python3-pip
-
 pip3 install flask
 pip3 install tweepy
 pip3 install gunicorn
